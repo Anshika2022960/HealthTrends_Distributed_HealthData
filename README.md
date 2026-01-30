@@ -59,13 +59,13 @@ I25,2917,47.78,0.505
 I10,2895,47.5,0.5105
 
 ## 📁 Repository Structure
-    healthtrend-pipeline/
-├── kafka/              # Kafka producer & consumer scripts
-├── spark/              # PySpark processing job
-├── orchestrator/       # Python orchestration pipeline
-├── docs/               # PRD, HLD, LLD documents
-├── architecture.png    # System architecture diagram
-└── README.md
+healthtrend-pipeline/
+kafka/              # Kafka producer & consumer scripts
+spark/              # PySpark processing job
+orchestrator/       # Python orchestration pipeline
+docs/               # PRD, HLD, LLD documents
+architecture.png    # System architecture diagram
+README.md
 
 ##  Conclusion
 This project demonstrates a real-world healthcare data pipeline using industry-standard big data technologies and showcases practical data engineering skills across ingestion, storage, processing, and reporting layers.
