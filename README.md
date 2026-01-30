@@ -24,39 +24,39 @@ Apache Spark (PySpark)
 
 ## Workflow Summary
 ## 1. Kafka Ingestion
-      Patient health data is produced to Kafka topics.
+Patient health data is produced to Kafka topics.
 ## 2. Validation & Storage
-      Python consumer validates schema and stores clean records in HDFS:
-      /healthTrend/patient_json/date=YYYY-MM-DD/
+Python consumer validates schema and stores clean records in HDFS:
+/healthTrend/patient_json/date=YYYY-MM-DD/
 ## 3. Spark Processing
-      PySpark reads data from HDFS and computes:
+PySpark reads data from HDFS and computes:
 
-      Diagnosis-wise patient count
+Diagnosis-wise patient count
 
-      Average patient age
+Average patient age
 
-      Gender ratio
+Gender ratio
 ## 4. Report Output
-      Final reports are written back to HDFS as CSV:
-      /healthTrend/reports/trend_summary/date=YYYY-MM-DD/
+Final reports are written back to HDFS as CSV:
+/healthTrend/reports/trend_summary/date=YYYY-MM-DD/
 ## 5. Orchestration
-      A Python orchestration script automates:
+A Python orchestration script automates:
 
-      Data ingestion
+Data ingestion
 
-      HDFS operations
+HDFS operations
 
-      Spark job execution
+Spark job execution
 
-      Error handling and retries.
+Error handling and retries.
 ## 6. How to Run
-      python patient_data_pipeline.py 2025-12-22
+python patient_data_pipeline.py 2025-12-22
 ## 7. Output
-      diagnosis,count,avg_age,gender_ratio
-        E11,2986,47.83,0.4973
-        J45,2938,47.63,0.5044
-        I25,2917,47.78,0.505
-        I10,2895,47.5,0.5105
+diagnosis,count,avg_age,gender_ratio
+E11,2986,47.83,0.4973
+J45,2938,47.63,0.5044
+I25,2917,47.78,0.505
+I10,2895,47.5,0.5105
 
 ## 📁 Repository Structure
     healthtrend-pipeline/
