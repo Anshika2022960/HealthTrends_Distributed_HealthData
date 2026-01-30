@@ -60,7 +60,8 @@ I10,2895,47.5,0.5105
 
 ## 📁 Repository Structure
 healthtrend-pipeline/
-healthtrend-pipeline/
+
+
 ├── kafka/              # Kafka producer & consumer scripts
 ├── spark/              # PySpark processing jobs
 ├── orchestrator/       # Python orchestration pipeline
