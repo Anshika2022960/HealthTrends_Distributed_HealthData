@@ -53,9 +53,13 @@ Error handling and retries.
 python patient_data_pipeline.py 2025-12-22
 ## 7. Output
 diagnosis,count,avg_age,gender_ratio
+
 E11,2986,47.83,0.4973
+
 J45,2938,47.63,0.5044
+
 I25,2917,47.78,0.505
+
 I10,2895,47.5,0.5105
 
 ## 📁 Repository Structure
@@ -63,10 +67,15 @@ healthtrend-pipeline/
 
 
 ├── kafka/              # Kafka producer & consumer scripts
+
 ├── spark/              # PySpark processing jobs
+
 ├── orchestrator/       # Python orchestration pipeline
+
 ├── docs/               # PRD, HLD, LLD documents
+
 ├── architecture.png    # System architecture diagram
+
 └── README.md
 
 
