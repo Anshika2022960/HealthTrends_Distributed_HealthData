@@ -82,4 +82,4 @@ healthtrend-pipeline/
 ##  Conclusion
 This project demonstrates a real-world healthcare data pipeline using industry-standard big data technologies and showcases practical data engineering skills across ingestion, storage, processing, and reporting layers.
 
-📄 Download Full Documentation: [Click Here](HealthTrend_Patient_data.pdf)
+📄 Download Full Documentation: [Click Here](Documentation/HealthTrend_Patient_data.pdf)
